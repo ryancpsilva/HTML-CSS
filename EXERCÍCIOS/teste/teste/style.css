@@ -1,0 +1,56 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+*{
+    color: #020659;
+    font-family: 'Tilt Neon', cursive;
+}
+body{
+    background-image: linear-gradient(to top, #135EF2, #9BCAF2);
+    background-attachment: fixed;
+    text-align: justify;
+    
+}
+h1{
+    text-align: center;
+}
+p{
+    font-size: large;
+}
+.divpg1{
+    width: 250px;
+}
+.divpg1 > h3{
+    display:none;
+}
+.divpg1:hover > h3{
+    display: block;
+    color: white;
+}
+.divpg1 > p{
+    display: none;
+}
+.divpg1:hover > p {
+    display: block;
+    color: white;
+    
+}
+.divpg1:hover{
+    color: white;
+    background-color: #02087394 ;
+    width: 250px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.adiv{
+    color: white;
+}
+.title{
+    text-decoration: underline;
+    background-color: #135df293;
+    width: 330px;
+    margin: auto;
+}
+.divpg2{
+    text-align: right;
+}
