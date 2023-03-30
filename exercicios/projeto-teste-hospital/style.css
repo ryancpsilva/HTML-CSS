@@ -4,20 +4,27 @@
     margin: 0px;
     padding: 0px;
 }
+:root{
+    --cor1: #17A68C;
+    --cor2: #F2D857;
+    --cor3: #F2B66D;
+    --cor4: #F2A477;
+    --cor5: #F2F2F2;
+}
 body{
-    background-color: rgb(75, 75, 75);
+    background-color: var(--cor1);
     font: normal 1.2em arial, helvetica, verdana, sans-serif;
 }
 header{
-    background-image: linear-gradient(to bottom, white 90%, rgb(75, 75, 75));
+    background-image: linear-gradient(to bottom, var(--cor5) 90%, var(--cor1));
     text-align: center;
-    height: 300px;
+    height: 350px;
     margin-bottom: 30px;
     padding-bottom: 30px;
 }
 header h1{
     padding-top:20px ;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 header p{
     font-weight: bold;
@@ -27,6 +34,25 @@ header p{
 header img{
     max-width: 178px;
     
+}
+header nav{
+    text-align: justify;
+    padding: 5px 0px;
+    margin-left: 5%;
+    background-image: linear-gradient(to right, var(--cor2), var(--cor5));
+    border-radius: 5px;
+    max-width: 500px;
+}
+header a {
+    text-decoration: none;
+    padding: 5px 15px;
+    color: black;
+    margin-right: 20px;
+}
+header a:hover{
+    background-color: var(--cor3);
+    border-radius: 5px;
+    transition: .3s;
 }
 main{
     text-align: justify;
