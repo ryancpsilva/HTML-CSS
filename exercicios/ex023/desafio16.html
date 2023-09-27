@@ -16,8 +16,8 @@
             border: 1px solid black;
             padding: 5px;
         }
-        th {
-            background-color: rgb(124, 124, 124);
+        thead {
+            background-color: gray;
         }
         td:hover {
             background-color: antiquewhite;
@@ -161,9 +161,23 @@
             </tr>
 
         </tbody>
-        <tfoot>
 
-        </tfoot>
     </table>
+    <script>
+        var area = document.getElementsByClassName('area')
+        area[0].addEventListener('mouseenter', entrar)
+        area[1].addEventListener('mouseenter', entrar)
+        area[0].addEventListener('mouseout', sair)
+        area[1].addEventListener('mouseout', sair)
+
+        function entrar() {
+            area[0].style.background = 'black'
+            area[1].style.background = 'black'
+        }
+        function sair() {
+            area[0].style.background = 'white'
+            area[1].style.background = 'white'
+        }
+    </script>
 </body>
 </html>
